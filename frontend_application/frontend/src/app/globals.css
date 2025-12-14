@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .auth-container {
+    @apply min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8;
+  }
+
+  .auth-card {
+    @apply w-full max-w-md space-y-8 bg-white p-8 rounded-2xl shadow-xl;
+  }
+
+  .auth-header {
+    @apply text-center;
+  }
+
+  .auth-title {
+    @apply text-3xl font-bold text-gray-900 mb-2;
+  }
+
+  .auth-subtitle {
+    @apply text-sm text-gray-600;
+  }
+}
